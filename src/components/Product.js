@@ -3,6 +3,7 @@ import { HiStar } from "react-icons/hi";
 import Currency from "react-currency-formatter";
 import { useDispatch } from "react-redux";
 import { addToBasket } from "../redux/slices/basketSlice";
+import { Link } from "react-router-dom";
 
 const MAX_RATING = 5;
 const MIN_RATING = 1;
@@ -20,7 +21,10 @@ const Product = ({ id, title, price, description, category, image }) => {
   };
 
   return (
-    <div className="relative flex flex-col m-5 bg-white z-30 p-10">
+    <Link
+      to={`/${id}`}
+      className="relative flex flex-col m-5 bg-white z-30 p-10"
+    >
       <p className="absolute top-2 right-2 text-sm italic text-gray-300">
         {category}
       </p>
@@ -45,7 +49,7 @@ const Product = ({ id, title, price, description, category, image }) => {
       <div onClick={addItemToBasket} className="mt-auto button">
         Add to basket
       </div>
-    </div>
+    </Link>
   );
 };
 

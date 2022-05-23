@@ -3,9 +3,11 @@ import Banner from "../components/Banner";
 import ProductFeed from "../components/ProductFeed";
 const LandingPage = () => {
   return (
-    <main className="max-w-screen-2xl mx-auto">
+    <main>
       <Banner />
-      <ProductFeed />
+      <main className="max-w-screen-2xl mx-auto">
+        <ProductFeed />
+      </main>
     </main>
   );
 };
