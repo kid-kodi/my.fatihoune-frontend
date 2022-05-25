@@ -36,10 +36,10 @@ const Header = () => {
             <p>Hello kone dangui ismael</p>
             <p className="font-extrabold md:text-sm">Account & Lists</p>
           </div>
-          <div className="link">
+          <Link to="orders" className="link">
             <p>Returns</p>
             <p className="font-extrabold md:text-sm">& Orders</p>
-          </div>
+          </Link>
           <Link to="/checkout" className="link relative flex items-center">
             <span className="absolute top-0 right-0 md:right-10 bg-yellow-500 h-4 w-4 text-center rounded-full text-black font-bold">
               {items.length}

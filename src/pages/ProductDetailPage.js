@@ -174,7 +174,7 @@ const ProductDetailPage = () => {
             </div>
             <div class="flex">
               <span class="title-font font-medium text-2xl text-gray-900">
-                $58.00
+                <Currency quantity={product.price} currency="EUR" />
               </span>
               <button
                 onClick={addItemToBasket}
